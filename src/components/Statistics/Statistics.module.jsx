@@ -6,6 +6,9 @@ export const StatisticsWrapper = styled.section`
 
   background: rgba(142, 227, 212, 0.22) ;
   border-radius: 18px;
+  @media screen  and (max-width: 767.98px){
+        width: fit-content;
+    }
 `
 export const StatisticsTitle = styled.h2`
     font-size: 24px;    
@@ -22,13 +25,16 @@ export const StatList = styled.ul`
 export const StatItem = styled.li`
     display: grid;
     justify-items: center;
-    width: 128px;
+    
     padding: 6px;
     :first-of-type{
         border-radius: 12px 0 0 12px;
     }
     :last-child{
         border-radius: 0 12px 12px 0;
+    }
+    @media screen  and (min-width: 768px){
+        width: 128px;
     }
 `
 export const ItemLabel = styled.span`

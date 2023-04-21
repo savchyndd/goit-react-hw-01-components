@@ -13,6 +13,11 @@ export const TransactionTable = styled.table`
     
     border-spacing: 0;
     border-radius: 18px;
+
+    @media screen and (max-width: 424.98px){
+        width: 300px;
+        margin: auto;
+    }
 `
 export const TableThead = styled.thead`
     font-size: 16px;

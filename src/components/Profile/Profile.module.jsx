@@ -62,10 +62,13 @@ padding: 12px;
 margin: 0;
  li{
   display: grid;
-  width: 128px;
+  width: 80px;
   justify-items: center;
   :not(:last-child){
     border-right: 1px solid #999999;
+  }
+  @media screen and (min-width: 768px){
+    width: 128px;
   }
  }
 `
