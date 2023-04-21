@@ -25,3 +25,13 @@ export const TransactionHistory = ({transactions}) => {
         </TransactionTable>  
     );
 }
+
+TransactionHistory.propTypes = {
+    transactions: PropTypes.arrayOf(PropTypes.shape(
+        {
+          type: PropTypes.string,
+          amount: PropTypes.number,
+          currency: PropTypes.string
+        }
+    )) 
+}
