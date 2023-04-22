@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 import { ItemLabel, ItemPercentage, StatisticsTitle, StatisticsWrapper, StatItem, StatList } from "./Statistics.module";
 import getRandomHexColor from "./GetRandomColor";
 
-export const Statistics = ({ title = "STATS", stats}) => {
+export const Statistics = ({ title, stats}) => {
     return (
         <StatisticsWrapper>
-            <StatisticsTitle>{title}</StatisticsTitle>
+            {title && <StatisticsTitle>{title}</StatisticsTitle>}
             
             <StatList>
                 {stats.map(({id,label,percentage}) => {
