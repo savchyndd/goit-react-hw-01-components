@@ -32,7 +32,7 @@
 лежать у файлі
 [user.json](https://github.com/goitacademy/react-homework/blob/master/homework-01/social-profile/user.json).
 
-image.png
+![image](https://github.com/savchyndd/goit-react-hw-01-components/assets/96209694/f463f269-d880-42ec-bb2c-ba7cd0d48266)
 
 #### Опис компонента `<Profile>`
 
@@ -46,7 +46,8 @@ image.png
 
 Компонент повинен створювати DOM елемент наступної структури.
 
-`<div class="profile">
+```
+<div class="profile">
 
   <div class="description">
     <img
@@ -73,11 +74,13 @@ image.png
       <span class="quantity">3000</span>
     </li>
   </ul>
-</div>`
+</div>
+```
 
 #### Приклад використання
 
-`import user from 'path/to/user.json;
+```
+import user from 'path/to/user.json;
 
 <Profile
   username={user.username}
@@ -85,7 +88,8 @@ image.png
   location={user.location}
   avatar={user.avatar}
   stats={user.stats}
-/>`
+/>
+```
 
 ## 2- Секція статистики
 
@@ -95,7 +99,7 @@ image.png
 статистику лежать у файлі
 [data.json](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/goitacademy/react-homework/blob/master/homework-01/statistics/data.json).
 
-image.png
+![image](https://github.com/savchyndd/goit-react-hw-01-components/assets/96209694/034c9380-e79e-4b9a-8bec-0b5758d95c1a)
 
 #### Опис компонента `<Statistics>`
 
@@ -111,7 +115,8 @@ image.png
 
 Компонент повинен створювати DOM елемент наступної структури.
 
-`<section class="statistics">
+```
+<section class="statistics">
 
   <h2 class="title">Upload stats</h2>
 
@@ -133,14 +138,17 @@ image.png
       <span class="percentage">12%</span>
     </li>
   </ul>
-</section>`
+</section>
+```
 
 #### Приклад використання
 
-`import data from '/path/to/data.json';
+```
+import data from '/path/to/data.json';
 
 <Statistics title="Upload stats" stats={data} />
-<Statistics stats={data} />`
+<Statistics stats={data} />
+```
 
 ## 3 - Список друзів
 
@@ -149,7 +157,7 @@ image.png
 зберігається у файлі
 [friends.json](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/goitacademy/react-homework/blob/master/homework-01/friend-list/friends.json).
 
-image.png
+![image](https://github.com/savchyndd/goit-react-hw-01-components/assets/96209694/378bc1cf-7586-438a-9448-5e269ccbc1c0)
 
 #### Опис компонента `<FriendList>`
 
@@ -157,10 +165,12 @@ image.png
 
 Компонент повинен створювати DOM наступної структури.
 
-`<ul class="friend-list">
+```
+<ul class="friend-list">
 
   <!-- Довільна кіл-сть FriendListItem -->
-</ul>`
+</ul>
+```
 
 #### Опис компонента `<FriendListItem>`
 
@@ -175,24 +185,28 @@ image.png
 
 Компонент повинен створювати DOM наступної структури.
 
-`<li class="item"> <span class="status"></span>
+```
+<li class="item"> <span class="status"></span>
 <img class="avatar" src="" alt="User avatar" width="48" />
 
   <p class="name"></p>
-</li>`
+</li>
+```
 
 #### Приклад використання
 
-`import friends from 'path/to/friends.json';
+```
+import friends from 'path/to/friends.json';
 
-<FriendList friends={friends} />;`
+<FriendList friends={friends} />;
+```
 
 ## 4 - Історія транзакцій
 
 Необхідно створити компонент історії транзакцій в особистому кабінеті
 інтернет-банку.
 
-image.png
+![image](https://github.com/savchyndd/goit-react-hw-01-components/assets/96209694/4bde93c6-1000-4cdc-acf2-3d79d42912bf)
 
 Дані для списку доступні у форматі JSON у файлі
 [transactions.json](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/goitacademy/react-homework/blob/master/homework-01/transaction-history/transactions.json).
@@ -211,7 +225,8 @@ image.png
 розмітку таблиці. Кожна транзакція – це рядок таблиці. У прикладі наведена
 розмітка двох транзакцій.
 
-`<table class="transaction-history">
+```
+<table class="transaction-history">
 
   <thead>
     <tr>
@@ -233,10 +248,13 @@ image.png
       <td>USD</td>
     </tr>
   </tbody>
-</table>`
+</table>
+```
 
 #### Приклад використання
 
-`import transactions from 'path/to/transactions.json';
+```
+import transactions from 'path/to/transactions.json';
 
-<TransactionHistory items={transactions} />;`
+<TransactionHistory items={transactions} />;
+```
